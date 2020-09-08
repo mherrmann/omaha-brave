@@ -1,4 +1,6 @@
-// Copyright 2010 Google Inc.
+const TCHAR* const kGoopdateBoundaryDescriptor = _T("GoogleUpdate_BD");
+const TCHAR* const kGoopdatePrivateNamespace = _T("GoogleUpdate");
+const TCHAR* const kGoopdatePrivateNamespacePrefix = _T("GoogleUpdate\\");// Copyright 2010 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -100,7 +102,7 @@ class ATL_NO_VTABLE Update3Web
     REGMAP_ENTRY(_T("HKROOT"), T::hk_root())
     REGMAP_ENTRY(_T("VERSION"), _T("1.0"))
     REGMAP_ENTRY(_T("PROGID"), T::prog_id())
-    REGMAP_ENTRY(_T("DESCRIPTION"), _T("GoogleUpdate Update3Web"))
+    REGMAP_ENTRY(_T("DESCRIPTION"), _T("BraveUpdate Update3Web"))
     REGMAP_ENTRY(_T("CLSID"), T::class_id())
     REGMAP_MODULE2(_T("MODULE"), kOmahaOnDemandFileName)
     REGMAP_ENTRY(_T("ICONRESID"), PP_STRINGIZE(IDI_ELEVATION_MONIKER_ICON))
